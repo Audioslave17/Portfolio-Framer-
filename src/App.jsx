@@ -1,19 +1,22 @@
 import React from 'react'
 import "./App.scss"
 import Navbar from './components/navbar/Navbar'
+import Hero from './components/hero/Hero'
+import Parallax from './components/parallax/Parallax'
 const App = () => {
   return (
     <div>
-      <section>
+      <section id="Homepage">
         <Navbar/>
+        <Hero/>
       </section>
-      <section>Parallax</section>
+      <section id="Experience"><Parallax type="experience"/></section>
       <section>Experience</section>
-      <section>Parallax</section>
+      <section id="Portfolio"><Parallax type="portfolio"/></section>
       <section>Portfolio1</section>
       <section>Portfolio2</section>
       <section>Portfolio3</section>
-      <section>Contact</section>
+      <section id='Contact'>Contact</section>
     </div>
   )
 }
