@@ -26,7 +26,7 @@ const Experience = () => {
 
 
   return (
-    <motion.div className="experience" variants={variants} initial="initial" ref={ref} animate = {isInView && "animate"}>
+    <motion.div className="experience" variants={variants} initial="initial" ref={ref} animate = {"animate"}>
         <motion.div className="textContainer">
             <p>I focus on building reliable websites <br /> and intuitive interface</p>
             <hr />
@@ -44,12 +44,12 @@ const Experience = () => {
         <motion.div className="listContainer" variants={variants}>
           <motion.div className="box" whileHover={{background:"lightgray",color:"black"}}>
             <h2>Auriga Sage</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolore ipsa laboriosam tempore eum exercitationem consequuntur quibusdam? Sequi dolorum iure cupiditate, provident rem sed?.</p>
+            <p>Worked as a Web Developer at Auriga Sage, where I developed dynamic and responsive web applications using React and Tailwind CSS for the frontend, and Spring Boot for backend integration.</p>
             <button>Go</button>
           </motion.div>
           <motion.div className="box" whileHover={{background:"lightgray",color:"black"}}>
-            <h2>Bharat Samwad</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptates ad voluptatem tenetur doloribus non dolorem perspiciatis explicabo deleniti perferendis, quam, cumque at quas?</p>
+            <h2>Bharat Samvad</h2>
+            <p>Worked as a Frontend Developer at Bharat Samvad, where I built the official website using React, focusing on responsive design, component-based architecture, and seamless user experience.</p>
             <button>Go</button>
           </motion.div>
         </motion.div>

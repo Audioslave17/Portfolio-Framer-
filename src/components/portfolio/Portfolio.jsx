@@ -8,18 +8,21 @@ const items = [
         title: "Chiranjeevi",
         img: "chiran.png",
         desc: "Chiranjeevi is a web application built using React.js for the frontend and Spring Boot for the backend. It enables users to book an ambulance and consult a doctor simultaneously, ensuring quick and efficient medical assistance in emergencies.",
+        link: "https://medcare-ambulnace-booking.netlify.app/",
     },
     {
         id: 2,
         title: "Tripti Foundation",
         img: "tripti.png",
         desc: "Tripti Foundation is a web platform developed using React.js and Spring Boot, designed to facilitate donations to people in need. It provides a secure and user-friendly interface for donors to contribute and support various humanitarian causes.",
+        link: "https://sparshgupta121.github.io/Tripti-Foundation/",
     },
     {
         id: 1,
         title: "Social Sphere",
         img: "social.png",
         desc: "Social Sphere is a full-featured social media platform built with React.js and Spring Boot. Along with standard social networking functionalities, it introduces a unique feature: chat rooms on trending topics, allowing users to join live debates and discussions in real time.",
+        link: "https://github.com/Audioslave17/SocialSphere",
     },
 ];
 const Single = ({item}) => {
@@ -36,7 +39,7 @@ const Single = ({item}) => {
                     <motion.div className="textContainer" style={{y}}>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button>See Demo</button>
+                        <button onClick={() => window.open(item.link, "_blank")}>See Demo</button>
                     </motion.div>
                 </div>
             </div>
